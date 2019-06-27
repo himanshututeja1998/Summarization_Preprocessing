@@ -22,7 +22,7 @@ Download GoogleNewPretrained weight https://drive.google.com/file/d/0B7XkCwpI5KD
 
 * bert_embedding_csvfile(i) :- This will create a csv file of sentence embedding using BERT model. Size of the csv is fixed for everry sentence (n,92499). This file will have 92500 columns SentenceId and then embedding. Here n, is the number of sentences in the document file.
 
-* bert_embedding_for_tokenized_sentence(i) :- This will create a csv file of average of all word embedding present in the sentence using BERT model using . Size of the csv is fixed for everry sentence (n,768). This file will have 769 columns SentenceId and then embedding where 768 depends on the bert model used.In this we are basically finding the BERT embedding for each and every word in the sentence . Here n, is the number of sentences in the document file.
+* bert_embedding_for_tokenized_sentence(i) :- This will create a csv file of average of all word embedding present in the sentence using BERT model word2vec averging approach. Size of the csv is fixed for everry sentence (n,768). This file will have 769 columns SentenceId and then embedding where 768 depends on the bert model used.In this we are basically finding the BERT embedding for each and every word in the sentence . Here n, is the number of sentences in the document file.
 
 * googlenewspretrainmodel_embedding(i):- This will create a csv file of average of all word embedding present in the sentence using Googlenews Pretrainned model. 
 
@@ -31,7 +31,7 @@ Here n, is the number of sentences in the document file.
 
 * cosine_similarity_bert_for_tokenized_sentence(i) :- This will create a csv file of cosine similarity of each pair of sentence present in the document using bert_embedding_for_tokenized_sentence . Size of the csv is fixed for everry sentence (n,n). Here n, is the number of sentences in the document file.
 
-* cosine_similarity_googlepretrainedmodel(i) :-  This will create a csv file of cosine similarity of each pair of sentence present in the document using        . Size of the csv is fixed for everry sentence (n,n). Here n, is the number of sentences in the document file.
+* cosine_similarity_googlepretrainedmodel(i) :-  This will create a csv file of cosine similarity of each pair of sentence present in the document using googlenews pretrained model embeddings. Size of the csv is fixed for everry sentence (n,n). Here n, is the number of sentences in the document file.
 
 * document_vector_bert(i) :- This will create a csv file of average of all sentence embedding present in the original csv of BERT embedding to create a document vector.
 
